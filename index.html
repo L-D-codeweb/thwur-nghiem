@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./icon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./icon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./icon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./icon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./icon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./icon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./icon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./icon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./icon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./icon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tự học lập trình website</title>
+  </head>
+  <body>
+    <p id="homee">
+      <a href="./" class="home">HOME</a>
+      <a href="./style.css" class="home">Chỉnh màu HTML</a> <br />
+    </p>
+    <img style="margin-top: 62px;"
+      src="./img/IMG_20140719_125949.jpg"
+      alt="Hình ảnh Long đẹp trai 2014"
+      height="200"
+    />
+    <h1 style="color: rgb(255, 127, 223)">Tự học lập trình Web</h1>
+    <h2>Bài 1: CSS cơ bản</h2>
+    <ol type="I">
+      <li><h3>Inline,internal and external</h3></li>
+    </ol>
+    <!-- 1: inline:là cách viết mã CSS ngay bên trong phần tử cơ bản của html.  -->
+    <!-- Cấu trúc: style=color: (màu tự chọn) -->
+    <h4>
+      <ul>
+        <li>1: Inline</li>
+      </ul>
+    </h4>
+    <p style="color: darkgreen">Lorem ipsum dolor sit amet.</p>
+    <p style="color: rgba(97, 0, 100, 0.479)">Lorem ipsum dolor sit amet.</p>
+    <p style="color: rgb(7, 0, 100)">Lorem ipsum dolor sit amet.</p>
+    <ul>
+      <li>2: Internal</li>
+    </ul>
+    <!-- 2: Internal: là cách viết mã CSS trong cặp thẻ style ở trong khối head -->
+    <!-- Cấu trúc: Ví dụ
+      <head>
+        <>
+            h1(...) {
+            color:pink; 
+            font-style: italic}
+  </head>  -->
+    <!-- h1 là tượng trưng cho selector(vùng tự chọn hoặc là thẻ html) -->
+    <!-- color: pink "mã CSS" -->
+    <!-- font-style "property" italic:"value" -->
+    <ul>
+      <li>3: External</li>
+    </ul>
+    <!-- 3: External: trong trường hợp muốn áp dụng cho toàn bộ file html nằm trên trang web, tiết kiệm thời gian cho việc coppy cho tất cả các file html như Internal -->
+    <!-- Cần khai báo trong HTMl để link đển tệp CSS: Ví dụ -->
+    <!-- <link rel="stylesheet" href="style.css" -->
+    <!-- Sau đó dữ Ctrl + click "style.css" -->
+    <hr />
+    <h2>Bài 2: học về các thuộc tính cơ bản của CSS</h2>
+    <!-- Một số thuộc tính cơ bản của CSS: -->
+    <!--color:(màu tự chọn) "chỉnh màu
+    font-style:(kiểu chữ tự chọn) "chỉnh kiểu chữ
+    font-size:(kích thước tự chọn) "chỉnh kích thước chữ
+    font-family:(font chữ tự chọn)
+    text-transform:(tự chọn) "viết hoa hoặc viết thường
+    text-align:(căn dòng) -->
+    <h3>Học về thuộc tính "opacity", "display" và "visibility"</h3>
+    <!-- opacity:(Độ trong suốt tự chọn) "theo TL '%' " -->
+    <!-- Vd: opacity:(36) để quy định độ trong suốt từ 0%->100% hoặc 0.0->1, vẫn có thể tương tác -->
+    <!-- display:(thuộc tính tự chọn)
+     Ví dụ display:none xoá phần tử khỏi giao giện, xoá không gian đang chiếm và ko thể tương tác -->
+    <!-- visibility:(thuộc tính tự chọn)
+      Ví dụ: visibility:(hidden;)để ẩn, ko ttac đc và vẫn chiếm chỗ
+                        (visible;)để hiện -->
+    <hr />
+    <h2>
+      Bài 3: Tìm hiểu về prefix (tắng cường tương thích đa trình duyệt cho
+      website)
+    </h2>
+    <p>Các công cụ hỗ trợ:</p>
+    <p>"auto prefixer" (Tự động thêm code prefix)</p>
+    <p>"caniuse.com" (kiểm tra các trình duyệt có hỗ trợ thuộc tính CSS)</p>
+    <hr />
+    <h2>Bài 4: Tìm hiểu về "id" và "class" "combinator selector "</h2>
+    <h3>ID</h3>
+    <!-- Cách gọi ID là giấu "#" -->
+    <!-- Không được đặt trùng ID! -->
+    <!-- KHông đặt tên ID bắt đầu bằng số đc! -->
+    <h3>class</h3>
+    <!-- Cách gọi class là giấu "." -->
+    <!-- Có thể đặt trùng class để tác động lên nhiều phần tử -->
+    <h3>combinator selector</h3>
+    <!-- Tổng kết lại kiến thức combinator selector: -->
+    <!-- 1: * selector -->
+    <!-- 2: element.class   -->
+    <!-- 3: element,element -->
+    <!-- 4: class1.class2 (chọn các thẻ có đồng thời class là...)-->
+    <!-- 5: space selector -->
+    <!-- 6: element > element (chọn thẻ con trực tiếp) -->
+    <!-- 7: element + element (chọn phần tử sát ngay sau) -->
+    <!-- element ~ elenmet (chọn tất cả phần tử nằm sau..) -->
+    <h2>Bài 5: Tìm hiểu về attribute selector</h2>
+    <a href="http://tuhoc.cc" target="_blank">click vào em đi 1</a>
+    <a href="http://tuhoc.cc" target="_self">click vào em đi 2</a>
+    <a href="http://tuhoc.cc">click vào em đi 3</a> <br />
+    <p href>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, est?
+    </p>
+    <!-- Cú pháp 1: attribute (vd: href -> tác động lên tất cả thuộc tính href) -->
+    <!-- Cú pháp 2: attribute = value (vd: target="blank" -> tđ lên tất cả thuộc tính có giá trị target="blank") -->
+    <!-- Cú pháp 3: attribute~= value (vd: title="pic" chỉ tđ lên các thuộc tính có gt title=:pic  ko áp dụng với chuỗi gt)  -->
+    <!-- Cú pháp 4: attribute*= value (vd: title="pic" tác động lên tất cả thuộc tính có gt title ăn tạp cả chuỗi gt hay bất kì) -->
+    <!-- Cú pháp 5 attribute|=value (vd pic -> chọn tất cả các thuộc tính có gt "pic" đứng đầu như:
+     pic, pic-ưewq-qưesda. ko áp dụng với gạch dưới hay chuỗi gt như: pic3,picdqw,... ) -->
+    <!-- Cú pháp 6: attribute^=value (vd: title="pic" tđ lên tất cả thuộc tính miễn là có gt pic "đứng đầu") -->
+    <!-- Cú pháp 7: attribute$=value (vd: title="v" tđ lên tất cả thuộc tính có gt kết thúc bằng "v") -->
+    <hr />
+    <h2>Bài 6: Thông thạo "Pseudo-classes"</h2>
+    <h3>Pseudo-classes</h3>
+    <!-- Các thuộc tính của Pseudo-classes -->
+    <!-- :hover (Vd: p:hover) -> Chọn các thẻ khi di chuột qua -->
+    <!-- :active(vd: a:active) ->chọn các thẻ khi nhấn, giữ chuột -->
+    <!-- :link (vd: a:link) ->chọn các thẻ có liên kết chưa click vào -->
+    <!-- :visited (vd: a:visited) ->chọn các thẻ có liên kết đã truy cập -->
+    <!-- :empty(Vd: div:empty) ->chọn các thẻ ko có nd -->
+    <!-- :target (Vd:) Chọn thẻ có id="home" khi trên URL có hash tương ứng. vd: (anylink in this) -->
+    <p>Tất cả đều có cú pháp chung là:</p>
+    <pre>
+      selector : Pseudo-classes{
+        <!-- Khối lệnh CSS -->
+         property: value;
+      }
+    </pre>
+    <h4 class="dichuotvaoday">Di chuột vào đây để biến đổi dòng chữ này</h4>
+    <h4 class="nhapvaodi">Giữ chuột vào đây để đổi màu...</h4>
+    <a
+      class="truycap"
+      href="https://www.youtube.com/c/galailaptrinh?sub_confirmation=1"
+    >
+      ->Tôi đã học code qua đường link này<-
+    </a>
+    <div class="div_elm"></div>
+    <hr />
+    <h2>Bài 7: Child-selectors</h2>
+    <!-- :fist-child (vd: p:fist-child) -> Chọn thẻ con "đầu tiên"!! trong thẻ bố -->
+    <!-- :last-child (vd: p: last-child) Chọn thẻ con "cuối cùng"!! -->
+    <!-- :nth-child(n) (vd: p: nth-child(n)) Chọn thẻ con theo thứ tự "n" tự chọn từ đầu đến cuối -->
+    <!-- :nth-last-child(n) (vd: p: nth-last-child(n)) Chọn thẻ con theo thứ tự "n" tự chọn từ cuối đến đầu -->
+    <!-- Với "nth" có thể sử dụng thêm thuộc tính:
+      odd: nhảy số lẻ
+      even: nhảy số chẵn
+      nn+1: nhảy số bất kì với "n" tự chọn và "n" bất kì -->
+    <!-- :only-child (vd: p: only-child) Chỉ chọn thẻ con duy nhất "con một" -->
+    Cú pháp chung:
+    <pre>  
+        selector:Pseudo-classes{
+          <!-- Khối lệnh CSS -->
+           property:value;
+        }
+     </pre>
+    <h2>Bài 8: Type selectors</h2>
+    <!-- :first-of-type (vd: p:first-of-type) -> chọn thẻ con là thẻ... đầu tiên -->
+    <!-- :last-of-type (vd: p:last-of-type) -> chọn thẻ con là thẻ.. cuối cùng -->
+    <!-- :nth-of-type(n) -> chọn thẻ con là thẻ... từ trên xuống theo "n" tự chọn -->
+    <!-- :nth-last-of-type(n) -> chọn thẻ con là thẻ.. từ cuối lên theo "n" tự chọn -->
+    <!-- :only-of-type -> chỉ chọn duy nhất một thẻ con... trong thẻ cha(mẹ) -->
+    <h2>Bài 9: not(selectors)</h2>
+    <!-- vd: (.top:not (p))->chọn các thẻ có class="top" trừ thẻ p để tác động -->
+    <div>
+      <p class="top">soduoppojpoqwjpmaspdnapsnd</p>
+      <br />
+      <p class="top">Lorem ipsum dolor sit amet.</p>
+      <h6 class="top">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Tempore, voluptate.
+      </h6>
+      <br />
+      <h6 class="top">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+      </h6>
+      <br />
+      <h5 class="top">ídafghojdsahfo</h5>
+      <br />
+      <h5 class="top">ídafghojdsahfo</h5>
+    </div>
+    <!-- ":not" này có thể áp dụng với Pseudo-class -->
+    <hr />
+    <h2>Bài 10: Tìm hiểu về Box Model-Mô hình hộp CSS</h2>
+    <p id="Box">
+      * Kích thước cao + rộng của phần tử = (nội dung + padding+ border)
+    </p>
+    <!-- * Trình duyệt luôn coi mỗi phần tử là một hình hộp chữ nhật gồm 5 phần : -->
+    <!-- 1: Nội dung(content): Chứa các dạng văn bản, hình ảnh, vid,... -->
+    <!-- 2: Padding: Khoảng đềm, nền không chứa nd. -->
+    <!-- ngoài ra còn có padding-top,bottom-right-left -->
+    <!-- 3: Border: là viền của phần tử (viền nét liền, nét đứt,...) -->
+    <!-- 4: Margin: khoảng cách, trống giữa các phần tử. -->
+    <ol type="A">
+      <ul>
+        <li>
+          *Trình duyệt luôn coi mỗi phần tử là một hình hộp chữ nhật gồm 5 phần:
+        </li>
+      </ul>
+
+      <li>
+        Nội dung (content):
+        <!-- - Chứa các text, dạng văn bản hoặc hình ảnh, vid,... -->
+        <p>VD: Đây là một đoạn văn bản tượng trưng...</p>
+      </li>
+      <li>
+        Padding:
+        <!--  Ngoài ra còn có: padding-top,bottom,right,left -->
+        <!-- Khoảng đệm, nền không chứa nội dung. -->
+        <p id="padding">VD của padding:</p>
+      </li>
+      <li>
+        Border:
+        <p>Cú pháp viết tách: border:/line-width || /line-style || /color</p>
+        <!-- Cũng như "padding" thì Border có Border-top,bottom,right,left -->
+        <!-- Một số thuộc tính cho viền(border): <br />
+          +solid: Nét liền nhau <br />
+          +dashed : Các nét đứt <br />
+          +Dotted : Chấm đốt <br />
+          +Double : Viền song song<br />
+          +groove : viền 3D<br />
+          +outset : Viền 3D <br />
+          +inset : Viền 3D <br /> -->
+        <p class="boder1">VD (border bình thường):</p>
+        <!-- border-radius viền bo góc  -->
+        <p class="boder2">VD (border bo góc):</p>
+      </li>
+      <li>
+        Margin:
+        <!-- Sử dụng để xác định khoảng cách giữa các phần tử (ko tham gia vào thành phần kích thước phần tử) -->
+        <p id="Margin">VD của Margin</p>
+        <!-- margin có thể dùng để căn giữa hoặc làm hiệu ứng avatar trồng lên nhau -->
+         <div class="thu_margin">
+            <img src="https://cdna.artstation.com/p/assets/images/images/029/728/172/large/hoang-mai-anh-hao-341dbd12-076c-4d96-9ce6-2bcea99d962a.jpg?1598457444" alt="" class="avatar">
+            <img src="https://wallpapers.com/images/hd/naruto-ramen-embzcsb5rcdacqn9.jpg" alt="" class="avatar">
+            <img src="https://yt3.ggpht.com/uH_ZlRckPmdfcRIiPBoKyJ_QDr9IM9LSNQDIxWlZM2_b-zWcMNVkcn3_DohVdAhwEVI3guCfwQ=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" class="avatar">
+         </div>
+         <!-- Margin có thể xảy ra hiện tượng collab:  -->
+          <!-- -Trường xảy ra với 2 phần tử liền kề theo chiều dọc"bottom hoặc top". Ko xảy ra vs chiều ngang..
+          VD: p/tử1 margin-bottom:30px           
+             p/tử2 margin-top:70px
+            ->> cả 2 chỉ cách nhau 70px
+          
+          <!- Có 2 cách để giải quyết trường hợp này là:
+          + Chỉ tác động lên 1 phần tử
+          +thêm thuộc tính [display:flex;] vào thẻ cha (trong trường hợp này là thẻ "ol") -> -->
+          <!-- -Trường hợp xảy ra với phần tử có quan hệ bố -> con (khi tác động margin riêng thẻ cha(con) hoặc tđ cùng chiều):
+              VD: 
+             <h1>pdkosjfgpksdjfksd</h1>
+            <div>
+              <p>đây là thẻ con</p>
+            </div>
+            +khi tđ mỗi thẻ con thẻ cha sẽ bị kéo theo và ngược lại (tđ với giá trị lớn nhất) và tđ cùng chiều cũng v..
+            Để giải quyết nên sử dụng: display: flex;
+                                        flex-direction: column;
+            vào thẻ cha( trong trường hợp này là thẻ div)  -->
+            
+          
+      </li>
+      <li>"outline", "outline-offset"
+        <p id="outline">VD cho phần outline</p>
+        <!-- outline là phần viền bao quanh từ border vào content 
+         -Ko tham gia vào kích thước phần tử
+         -Nằm đè lên margin
+         -Ko thể vẽ riêng các chiều giống border,padding và content
+          -->
+      </li>
+      <li>"content-box" và "border-box"</li>
+      <p class="bz content-box">VD của content-box</p>
+      <p class="bz borderbox">VD của border-box</p>
+      <!-- content-box là tính kích thước phần content -->
+       <!-- border-box là tính tổng kích thước của phần tử (border + padding + content)
+        thường ngta sẽ sử dụng border-box nhiều hơn vì tiện ích -->
+    </ol>
+    </div>
+    <hr>
+    <h2>Bài 11: Làm quen với display:"block" "inline"</h2>
+    <a href="https://www.w3schools.com/htmL/html_blocks.asp" id="tlbin">Tài liệu về các thẻ được thể hiện dưới dạng block hoặc inline</a>
+    <!-- có những thẻ HTML đc thể hiện dưới dạng block
+     - Dạng block sẽ chiếm hết 100% chiều rộng của thẻ cha -->
+     <!-- có những thẻ HTML đc thẻ hiện dưới dạng inline
+      - Dạng này ko chiếm hết dòng ko phá vỡ các dòng.. -->
+      <!-- * Chú ý!!: inline sẽ có một vài thuộc tính ko thể áp dụng như:
+       - padding-top hoặc bottom, margin-top hoặc bottom..
+       - width, height, min-width, min-height.. 
+       Nhưng nếu muốn áp dụng chúng ta có thể sử dụng thuộc tính "display: inline-block;"-->
+       <hr>
+     <h2> Bài 12: Tìm hiểu về các đơn vị trong css</h2>
+       <!-- Có 2 kiểu đơn vị: 
+        1 là đơn vị tuyệt đối: đơn vị này sẽ ko thay đổi kích thước, vị trí cho dù có thay đổi trình duyệt ra sao..
+        2 là đơn vị tương đối: đơn vị này sẽ thay đổi kích thước, vị trí để phù hợp với trình duyệt bị thay đổi.. -->
+       <a href="https://www.w3schools.com/cssref/css_units.php" id="tldv">tài liệu về đơn vị css</a>
+       <!-- đơn vị (1) pixel "px": càng nhiều px thì phần tử càng đc thể hiện rõ.. -->
+       <!-- đơn vị (2) phần trăm "%": Phụ thuộc vào phần tử cha, tự điều chỉnh cho phù hợp.  -->
+       <!-- đơn vị (2) viewport "vw" "vh": chiều rộng và chiều cao khung nhìn hiện thị trên browser(cũng phụ thuộc vào thẻ cha mà tự điều chỉnh) -->
+       <!-- đơn vị (2) "em" : đơn vị này sẽ lấy kích thước (font-size) của chính thẻ mang nó nhân với "...em" (thẻ này có thừa kế) -->
+       <!-- đơn vị (2) "rem" : rem lấy kích thước (font-size) của chính thẻ mang nó nhân với "...rem" (nhưng ko có kế thừa)
+            ta có thể thay đơn vị pixel thành rem -->
+            <hr>
+      <h2>bài 13: Học về màu trong CSS</h2>
+      <!-- Có nhiều cách để chỉnh màu trong CSS 
+       - kênh rgb: (red,green,blue)
+       - kênh rgba: (red,green,blue,alpha) <alpha là thể hiện độ trong suốt>
+       - hệ màu "hex" (thập lục phân): (#rrggbb) <mỗi kênh màu chạy từ 0-f>
+       - color: name 
+       - currentcolor: <VD cách dùng:> 
+        <div class="box">
+        </div> 
+        .box {
+  background-color: #aaa;
+  color: currentColor;
+} --> <hr>
+  <h2>Bài 14.1: Tìm hiểu về font chữ trong CSS</h2>
+  <!-- Có 3 kiểu font chữ phổ biến: -->
+  <p id="fontcss">Serif</p>
+  <p id="fontcss">Sans-serif</p>
+  <p id="fontcss">Monospace</p>
+  <!-- 3 font trên là vd cho "font-family" -->
+   <!-- trong font-family này có nhiều kiểu khác nữa được gọi là "font-name" -->
+    <!-- vd: trong serif có Time New Roman là font-name.. -->
+<h2>Bài 14.2: system font CSS</h2>
+<!-- Mỗi một hệ điều hành của hệ thống khác nhau thì có riêng một kiểu font hệ thống khác nhau -->
+ <!-- việc sử dụng font hệ thống giúp thiết bị khách hàng, người truy cập web được chạy ổn định hơn -->
+  <a href="https://css-tricks.com/snippets/css/system-font-stack/" class="font-stack">Tìm hiểu phương pháp sử dụng system font CSS</a>
+  <h2>Bài 14.3: CSS google font </h2>
+  <!-- sử dụng font CSS trên internet giúp bất cứ các thiết bị nào cũng sẽ hiện thị giống nhau kể cả việc thiết bị đó có hay ko.. -->
+   <a href="http://fonts.google.com/" class="fontin">website lựa chọn và tìm kiếm font CSS</a> <br>
+   <a href="https://www.youtube.com/watch?v=pBdGHn-OIMM&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=79" class="tuhoc cc">video Tuhoc.cc</a>
+   <h2>Bài 15,1 pypographic: font-weight & line-height</h2>
+   <!-- font-weight: chỉnh độ dày của chữ từ 100-900 + Một số thuộc tính(bold + bolder(đậm lên một bậc); lighter(mờ đi một bậc))  -->
+    <!-- line-height: là khoảng cách dòng giữa các dòng chữ..
+     + Mẹo canh giữa: line-height: 110px; -->
+     <p class="fontwt">Tôi rất thích nghe nhạc của ca sĩ Thịnh suy và một vài ca sĩ khác</p>
+     <hr>
+     <h2>bài 15.2 pypographic: letter-spacing; word-spacing; text-align</h2>
+     <!-- letter-spacing: khoảng cách giữa các chữ cái -->
+      <!-- word-spacing: khoảng cách giữa các từ -->
+       <!-- text-align: centrer (căn giữa so với chính thẻ đó)
+                        justify (căn dàn đều hai bên)
+                        left (căn trái "mặc định")
+                        right (căn phải) -->
+      <p class="letter-align">Bài hát Tiny love là một trong những bài hát của Thịnh suy mà tôi thích</p>
+      <p class="word_align">Bray thật sự là một rapper mà tôi rất có ấn tượng với sản phẩm của anh ấy</p>
+                        <hr>
+    <h2>Bài 15.3 pypographic: text-decoration; text-indent; text-transform</h2>
+    <!-- text-decoration: none (xoá bỏ dấu gạch)
+                          underline (gạch chân)
+                          line-thought (gạch ngang chữ)
+                          overline (gạch trên đầu) -->
+    <!-- text-indent: dùng để thụt lề giống với viết văn phải thụt lề đầu dòng.. -->
+    <!-- text-transform: uppercase; (viết hoa tất cả)
+                         lowercase; (viết thường tất cả)
+                         capitalize; (viết hoa chữ cái đầu) -->
+    <p class="text_over_up">Mck là một nghệ sĩ âm nhạc mà tôi được biến đến bởi bạn tôi</p>
+    <p class="text_under_lower">"Và nếu lúc ấy.. anh nhìn vào đôi mắt emm.."</p>
+    <p class="text_line_cap">"Vì em chẳng thể yêu một người vô tâmm..."</p>
+                         <hr>
+    <h2>Bài 15.4 pypographic: white-space; word-break</h2>
+    <!-- white-space: normal;(mặc định)
+                      nowrap;(ko xuống dòng khi chạm cả lề)
+                      pre;(giữ nguyên định dạng code)
+                      pre-wrap;(giữ nguyên định dạng code)
+                      pre-line;(giữ nguyên khoảng cách xuống dòng, xoá các khoảng cách giữa các từ cùng dòng) -->
+   <!-- word-break: break-all (dùng thuộc tính này để ko bị phá vỡ giao diện) -->
+    <p class="space_break">"Nghe kể là năm 90 em dạo cùng anh ta.."
+
+      "khắp phố xá dêm nay ko về nhà.."
+
+     icabo?Animfacerenullaatquequasoloremqueepeditaillumoloresipsumlaborum.Saepesolutaasperioresarchitectoinerror?
+    </p>
+    <hr>
+    <h2>Bài 15.5 pypographic: text-shadow and overflow</h2>
+    <!-- text-shadow: 0px(trục x->) 0px(trục Y) 0px(độ nhoè) color; -->
+     <p class="shadow">Làm sao để kiếm tiền ở tuổi học sinh mà phải có an toàn, phù hợp, ko bỏ bê học tập</p>
+     <!-- overflow: visbility(defaut)
+                    hidden (text vượt box -> ko thể xem)
+                    scroll (thanh cuốn)
+                    auto (nếu vượt box -> tự động thêm thanh scroll) --> 
+    <p class="overflow">Các tip để kiếm tiền ở tuổi học sinh mà bao gồm: an toàn, phù hợp, ko thể bỏ bê học tập, tương lai sáng rạng...
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fuga illum doloremque rerum sequi nemo fugiat expedita enim totam doloribus culpa maiores consequatur,earumquiabeataequodmagnamprovidentad?
+    </p>
+<h3>Phần nhỏ của Overflow: overflow-scrollbar and overscroll-behavior</h3>
+<!-- overscroll-behavior: visibility(mặc định)
+                contain(chỉ cuốn được chỗ chỏ chuột chỉ định)
+                none(giống vs contain) -->
+ <!-- scrollbar: width(độ rộng của thanh cuốn)
+                 track(về hộp bên dưới thanh cuốn)
+                 handle(về thanh cuốn)
+                 handle on hover(khi di chuột vào thanh cuốn)-->
+                 <p class="overscroll2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio saepe eaque eum maiores, ipsa ipsum ducimus velit esse ex, suscipit, obcaecati vitae quo! Maxime error, praesentium nam aperiam suscipit quisquam.
+                 Aspernatur, rem facilis et eius ducimus aut soluta at molestias similique in, laboriosam totam adipisci itaque, quod quaerat repellat necessitatibus? Quis fugiat ab non pariatur alias labore sint exercitationem animi!
+                 Similique commodi cumque alias quis quia fugit, ut non nulla recusandae voluptatem? Facilis qui quasi alias ratione recusandae ducimus deserunt culpa quia doloremque ipsa cumque molestias dicta, unde, dolorum ab.
+                 Sit laboriosam ratione exercitationem! Architecto illum laborum eius magnam saepe veniam exercitationem quia quisquam at voluptatum, dolorem nobis? Ipsa ex rem sunt voluptatem quis minima fugit blanditiis laudantium ipsum adipisci.</p>
+                 <hr>
+ <h3>Text-overflow</h3>
+ <!-- text-overflow: tạo dấu "..." ở cuối dòng khi text vượt quá box -->
+  <p class="tover1">Mệt mỏi 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rem neque nulla dolor! Officia accusamus similique cum! Libero, tempore voluptatem! Aperiam assumenda quaerat dolorem debitis unde itaque omnis, inventore maiores?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, esse velit nesciunt harum optio quibusdam numquam tenetur asperiores vel facere sit placeat blanditiis voluptas, deleniti corrupti necessitatibus quasi cupiditate excepturi!
+Lorem, ipsum.</p>
+<h2>Bài 16: </h2>
+<a href="https://fontawesome.com/" class="fontawsome">Font awesome (trang web thêm icon) </a>
+<!-- link để có thể nhúng icon "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" -->
+ <hr>
+ <h2>Bài 17.1 background: background-color</h2>
+ <div class="background-color"></div>
+ <!-- backgroung-color: transparment (mặc định của thuộc tính) -->
+  <!-- cách đổi màu nền:
+   - tên màu: red; 
+   - kênh Rgb:(0, 0 , 0);
+   - dùng color hiện tại: currentcolor-->
+   <hr>
+<h2>Bài 17.2 background: background-image; background-repeat</h2>
+   <div class="background-image"></div>
+   <!-- background-image: url(), url(),...    "ưu tiên ảnh đứng trước" -->
+    <!-- background-image: none (để ẩn background) -->
+     <!-- background-repeat: no-repeat (ko lặp lại background)
+                            repeat-x (lặp lại theo trục hoành)
+                            repeat-y (lặp lại theo trục tung)
+                            repeat (lặp lại cho toàn diện trang web) -->
+                            <hr>
+<h2>bài 17.3 background: background-size</h2>
+<!-- background-size: "ảnh thể hiện size mặc định hay là size gốc" (mặc định)
+                     contain (ảnh được chỉnh vửa với khung hình, không bị méo nhưng sẽ bị lặp lại nếu dư khoảng trống)
+                     cover ( ảnh được kéo dãn lấp đầy với khung hình, không bị méo nhưng sẽ bị mất một phần nếu thiếu chỗ ) 
+    VD: tl ảnh gốc: 1:1 
+        kích thước cho 1:2 (contain: lặp lại chiều cao
+                            cover: mất chiều cao)-->
+<!--(có thể nhập đối số) background-size: 1px(chiều rộng) 1px(chiều cao) -->
+<div class="background-size"></div>
+<hr>
+<h2>Bài 17.4 background: background-position</h2>
+<div class="background-position"></div>
+<!-- background-position: (thuộc tính..)
+                          top; bottom; left; right
+                          top-left; top-right; bottom-left; bottom-right
+                          centrer  -->
+<!-- background-position: 0px 0px(hoặc "%")
+ "px" chạy theo trục -oxy(trục âm) "%" chạy theo  +oxy(trục dương) -->
+ <hr>
+ <h2>Bài 17.5 background: liner-gradient and radial-gradient</h2>
+ <!-- background: liner-gradient:("..deg, color-stop1, color-stop2, ...")
+                  radial-gradient:_______________________________________ -->
+                  <!-- "..deg" chỉnh góc, hướng chuyển màu
+                       "color" chọn màu
+                       "stop1,2,..." phần màu sẽ ko bị đổi -->
+  <a class="background-gradient" href="https://cssgradient.io/"  target="_blank">Trang web hỗ trợ </a>
+  <div class="background-gradientbox"></div>
+  <hr>
+  <h2>Bài 17.6 background: background-attachment</h2>
+  <!--(Khi có ảnh) background-attachment: scoll: Ảnh sẽ được cuộn theo trang web
+                                          fixed: Ảnh sẽ được cố định, hiện thị dần khi cuộn
+                                          local: Ảnh cố định, muốn xem thì cuộn trong box ảnh -->
+    <div id="background-attachment"></div>
+                                          <hr>
+  <h2>Bài 17.7 background: background-clip</h2>
+  <!-- background-clip: boder-box (nền đổ từ phần boder)
+                        padding-box (____________ padding)
+                        content-box (____________ content)
+                        text (nền chuyển thành text)-->
+  <div id="background-clip">thịnh suy - đêm<p class="background-clip"> (official music video)</p></div>
+                        <hr>
+  <h2>Bài 17.8 background: background-origin</h2>
+  <!--(quy định nền đổ từ đâu) background-origin: border(nền đổ từ border)
+                                                  padding(default)
+                                                  content(______ content) -->
+                                                  <hr>
+ <h2>bài 17.9 background: background-shorthand</h2>
+ <!-- Cú pháp viết tách cho background:: -->
+ <!-- background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; -->
+ <hr>
+ <h2>Bài 18: backdrop-filter</h2> 
+ <div id="thunghiembacdrop"><p class="backdropfilter">HELLO STEALA</p></div>
+ <hr>
+ <h2>Bài 19: clip-path</h2>
+ <!-- clip-path: circel(50% at X Y) -> bán kính at trục X Y
+                 inset(20px, 10px, 100px, 30px round 10px 20px 100px 34px) -> cắt theo hình chữ nhật round bo góc
+                 polygon(xy,xy,xy,xy,xy,...) cắt theo hình đa giác tuỳ chỉnh -->
+  <a class="hotro_clip-path-web" href="https://www.cssportal.com/css-clip-path-generator/">Trang web hỗ trợ clip-path</a>\
+  <hr>
+  <h2>Bài 20: box-shadow</h2>
+  <a href="https://getcssscan.com/css-box-shadow-examples" id="boxshadow-web">Một số kiểu mẫu có thể sử dụng</a>
+  <!-- box-shadow: 0px 0px 0px 0px color
+        -> THeo thứ tự lần lượt: X Y BlurRadius(độ nhoè) SpreadRadius(độ lớn) color -->
+        <div class="box_shadow"></div>
+        <hr>
+  <h2>Bài 21: pointer-events</h2>
+  <!-- pointer-events: none -> nếu là Ảnh thì ko thể lấy link bằng chuột phải
+                            -> Nếu là thẻ a thì ko thể tương tác bằng chuột hay ko nhấp đc link -->
+  <H2>Bài 22: Làm việc với img</H2>
+  <!-- <img (loading="lazy") src="" alt=""> 
+   Loading="lazy" giúp thiết bị người truy cập ko phải tải tất cả hình ảnh trong web-->
+   <!-- Mẹo canh giữa trong box chứa
+    display:block (nếu là thẻ inline thì thêm)
+    margin: 0 auto; -->
+    <img id="imgObito" loading="lazy" src="./img/Obito.jpg" alt="avatar Nghệ sĩ âm nhạc Obito">
+    <hr>
+   <h2>Bài 23: Pseudo-element</h2>
+    <!-- element::first-line ( Dòng đầu tiên)
+                ::first-letter (Chữ cái đầu)
+                ::selection ( Phần được bôi đen)
+                ::marker (Phần đánh dấu "thẻ li")
+                ::before (Trước phần tử đó)
+                ::after (Sau phần tử đó)-->
+   
+  
+  <h2>Bài 24: CSS Counter</h2>
+  <!-- "element" (Cha) {
+   counter-reset:(tên biến) } -> tạo biến, -->
+   <!-- "element" (con) {
+    counter-increment: (tên biến đã đặt trước đó) -> tăng biến đếm lên 1  } -->
+    <!-- thêm element con một biến "element"(con)::befor{content: counter(name);} -->
+    <h2>Bài 25: Hàm calc()</h2>
+    <!-- Hàm calc() sử dụng các phép toán đơn giản: +  -  *  / -->
+     <!-- Có thể sử dụng với các thuộc tính như là: width, height, margin, padding, top, left, bottom, background-position,...................... -->
+    <!-- *Lưu ý*: 
+     + và - : phải có dấu cách
+     * sao cx đc
+     / : số lớn chia số bé  -->
+ <ul id="counter-css">
+    <li id="EXAMPLE">Example CSS 1
+      <ol id="EXAMPLE2">
+      <li id="Example3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, quibusdam unde. Laudanti</li>
+      <li id="Example3">Lorem ipsum, dolor sit amet consectetur adipislit. Esse, quibdanti</li>
+      <li id="Example3">Lorem ipsum, dolor sit amet consectetur adipisicing eliusdam unde. Laudanti</li>
+    </ol>
+  </li>
+    <li id="EXAMPLE">Example CSS 2
+      <ol id="EXAMPLE2"><li id="Example3">Lorem ipsum, dolor sit amet colit. Accusantium, reprehenderit? Temporibus repudiandae unde p</li>
+      <li id="Example3">Lorem, ipsum dolor sit  Earum nom voluptatibus corriuue exeunt itaque laboriosam excepturi in, </li></ol>
+    </li>
+    <li id="EXAMPLE">Example CSS 3
+      <ol id="EXAMPLE2"><li id="Example3">Lorem ipsum, dolor sit amet r adipisicing elum, reprehenderit? Temporibus repudiandae unde p</li>
+      <li id="Example3">Lorem, ipsum dolor sits lique exercitationem placeat nesciunt itaque laboriosam excepturi in, </li></ol>
+    </li>
+    <li id="EXAMPLE">Example CSS 4
+      <ol id="EXAMPLE2"><li id="Example3">Lorem ipsum, dolor sit amet consectetur adipisium, reprehenderit? Temporibus repudiandae unde p</li>
+      <li id="Example3">
+        Lorem, ipsum dolor sit aectetur adipisicing elit. luptatibus tempore esse corporis molestias iusto soluta, similique exercitationem placeat nesciunt itaque laboriosam excepturi in, 
+      </li></ol>
+    </li>
+  </ul>
+  <hr>
+  <h2>Bài 26: CSS Variables</h2>
+  <!-- Có 2 kiểu gán giá trị 
+   1: :root (khai báo toàn phần "như HTML")
+   2: element (chỉ có thể khai báo chính nó và phần tử con của element đó)-->
+   <!-- Cách khai báo: Gồm tên biến và thuộc tính  
+    --box-color: rgba(,,....,,.,) -->
+    <!-- Cách gọi tên biến:
+    color: var( --tên_biến) -->
+    <hr>
+    <h2>Bài 27: CSS position</h2>
+    <!--position: static(mặc định) 
+                  realative(định vị so với vị trí của nó một khoảng"x")
+                  absolute(Đưa lên một tầng)
+                  fixed()
+                  -->
+     <div class="fontawsome"><i class="fa-solid fa-dragon"></i></div>             
+                  <hr>
+   <H2>Bài 28: z-index </H2>
+   <!-- z-index dùng để chỉ phần tử nào nằm trên phần tử nìa -->
+    <div class="z_index">Phần tử 1</div>
+    <div class="z_index">Phần tử 2</div>
+  <h2>Bài 29: position-sticky</h2>
+  <!-- position: sticky (lấy thẻ cha gần nhất làm gốc. Khi scroll web thẻ sẽ được giữ vị trí) -->
+  <hr>
+  <h2>Bài 30: float layout</h2>
+   <!-- 1 trang web có "page layout" là toàn trang, và "compoment layout" là phần tử đc sắp xếp... -->
+    <!-- Dùng float layout để tuỳ chỉnh phần tử này bao xquanh phần tử nìa "text bao quanh ảnh" -->
+     <!-- float: left
+                 right -->
+  <!-- Dùng clear: left
+                   right
+                   Để chỉnh các phần tử thành mặc định -->
+                   <hr>
+ <h2>Bài 31 CSS flexbox: flex-container</h2>
+  <!-- justify-content: nếu là defaut ->> (căn theo chiều ngang "Trục main axis")
+       justify-content: flex-start "end"
+                        center(căn giữa)
+                        space-between(Có khoảng cách đều nhau và sát lề)
+                        space-around(có khoảng cách giữa các phần tử đều nhau "2x khoảng mép lề")
+                        space-evenly(có khoảng cách đều nhau)
+       align-items: nếu là defaut ->> (căn theo trục dọc "Trục cross axis")
+       align-items: strech: defaut(các phần tử luôn giãn đều ra để đủ phần box cha)
+                    flex-start(end)
+                    center:(căn giữa)
+                    baseline: (căn các phần tử thẳng hàng "cùng nằm trên một đường thẳng")-->
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum possimus explicabo, nam suscipit hic repudiandae, dolorum fugiat molestias minus ipsum neque fuga aperiam ratione exercitationem! Quae necessitatibus rerum iure!
+       </p>
+       <!-- flex-wrap: nowrap (defaut "các phần tử sẽ ko xuống hàng mà co nhỏ nếu quá chiều rộng")
+                       wrap (Các phần tử sẽ bị bẻ xuống hàng khi quá chiều rộng)
+                       wrap-reverse (Đảo ngược hướng so với wrap)
+                        ->>
+       align-content: tretch (defaut nếu kích thước box_chứa >box_con -> Tự giãn)
+                      flex-start (dồn các phần tử vào cross start)
+                      flex-end (Dồn các phần tử vào cross end)
+                      center (Căn giữa các phần tử trong box_cha)
+                      space-between (Tạo ra khoảng cách giữa các phần tử, sát lề )
+                      space-around (Tạo ra khoảng cách giữa các phần tử, có cách lề)-->
+       <!-- flex-direction: row (defaut "Trái sang phải")
+                            row-reverse (đổi chiều defaut "phải sang trái" )
+                            colum (xoay "Trục" main -> dọc,trên_xuống ; cross -> ngang, Trái_phải)
+                            colum-reverse (main -> dọc, dưới_lên ; cross -> ngang, phải_trái
+
+       flext-flow: cú pháp viết tắt của flex-wrap và flex-direction 
+       VD: flex-flow: nowrap row-reverse; -->
+<h2>Bài 32:flex-box</h2>
+<!-- align-self: stretch
+                 flex-start<=>end
+                 center
+                 baseline -->
+ <!-- flex-grow:(1; 2; 3;...) tăng lên <=> chiếm phần -->
+ <!-- flex-skrink:(1; 2; 3;...) co lại -->
+ <!-- flex-basis: set main size(Lưu ý: main axis!!) -->
+ <!--  flex: flex-grow | flex-shrink | flex-bacsis 
+   khi chỉnh size của content sẽ có các thứ tự ưu tiên: 1: content width
+                                                        2: width
+                                                        3: flex-basis
+                                                        4: min-width | max-width-->
+  <!-- Khi co trình duyệt quá ngưỡng width các content sẽ co lại -> min-width mà co tiếp content sẽ bị mất  -->
+ <!-- order: (0; 1; 2; 3;....;)
+  Thứ tự đứng trước và sau theo trục main axis -->
+</body>
+</html>

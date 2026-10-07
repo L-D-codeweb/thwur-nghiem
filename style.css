@@ -1,0 +1,540 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+ul,
+ol {
+  color: brown;
+}
+p {
+  color: black;
+}
+#tlbin:hover {
+  color: green;
+}
+.font-stack {
+  background-color: rgb(150, 248, 255);
+  text-decoration: none;
+  max-width: 200px;
+  max-height: 200px;
+  padding: 20px 16px;
+  border-radius: 900px;
+}
+.font-stack:hover {
+  background-color: rgba(55, 175, 211, 0.863);
+}
+.fontin:hover {
+  background-color: rgba(162, 170, 47, 0.856);
+}
+.tuhoc:hover {
+  background-color: rgba(155, 115, 70, 0.897);
+}
+.fontin {
+  background-color: rgb(197, 186, 36);
+  text-decoration: none;
+  margin-bottom: 30px;
+  max-width: 200px;
+  max-height: 200px;
+  padding: 20px 16px;
+  border-radius: 900px;
+  display: inline-block;
+}
+.tuhoc {
+  background-color: rgba(211, 130, 8, 0.959);
+  text-decoration: none;
+  max-width: 200px;
+  max-height: 200px;
+  padding: 20px 16px;
+  border-radius: 900px;
+}
+/* Tách */
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: unset;
+}
+/* user-select: none "thuộc tính CSS, người dùng web ko thể tác động" */
+/* tách */
+[target="_self"] {
+  color: black;
+}
+[target~="_blank"] {
+  color: green;
+}
+/* Tách */
+.dichuotvaoday:hover {
+  color: chocolate;
+  font-size: 30px;
+}
+.nhapvaodi:active {
+  text-align: center;
+  font-size: 100px;
+  color: gold;
+}
+.truycap:link {
+  color: purple;
+}
+.truycap:visited {
+  font-size: 30px;
+}
+.div_elm:empty {
+  width: 200px;
+  height: 200px;
+  background-color: peru;
+}
+
+#123:target {
+  color: hotpink;
+}
+/* tách */
+.top:not(:first-of-type) {
+  text-align: center;
+  color: lawngreen;
+}
+.code1.code2 {
+  color: red;
+}
+.haizon:nth-child(2) {
+  color: red;
+}
+/* tách */
+/* Về box-model */
+/* padding */
+#Box {
+  width: 400px;
+  height: 50px;
+  background-color: wheat;
+  /* 4 cạnh bằng nhau */
+  padding: 20px;
+  /* Trên dưới - Trái phải */
+  /* padding: 20px 40px;
+  /* Trên - Trái Phải - Dưới */
+  /* padding: 20px 30px 40px; */
+  /* Trên - phải - dưới - trái */
+  /* padding: 20px 30px 20px 100px; */
+}
+#padding {
+  background-color: aqua;
+  width: 70px;
+  height: 30px;
+  padding: 20px;
+}
+/* border,,, */
+.boder1 {
+  width: 100px;
+  height: 100px;
+  border: 5px dashed yellow;
+}
+.boder2 {
+  background-color: gold;
+  width: 105px;
+  height: 105px;
+  /* bo 4 góc */
+  border-radius: 30px;
+  /* !!! Thứ tự bo góc của border !!!*/
+  /* border-top-left-radius: ; */
+  /* border-top-right-radius: ; */
+  /* border-bottom-right-radius: ; */
+  /* border-bottom-left-radius: ; */
+}
+/* Margin */
+#Margin {
+  background-color: azure;
+  height: 100px;
+  width: 100px;
+  border: 4px solid blue;
+  margin: 70px;
+  /* Margin cx có top,left,bottom,right */
+}
+.avatar {
+  max-width: 100px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: -60px;
+}
+.avatar:nth-child(2) {
+  opacity: 68%;
+}
+/* outline và outline-offset */
+#outline {
+  margin: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+  outline: 15px solid palevioletred;
+  outline-offset: 10px;
+}
+/* content-box */
+.bz {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: palegoldenrod;
+  border: 20px solid rgb(63, 63, 121);
+  box-sizing: content-box;
+}
+.borderbox {
+  box-sizing: border-box;
+}
+/* box-sizzing: "block" "inline" */
+#tlbin {
+  margin-left: 30px;
+  background-color: rgb(214, 150, 185);
+  color: #000;
+  width: 500px;
+  height: 70px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 90px;
+  display: inline-block;
+}
+#tlbin:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(214, 150, 185);
+}
+/* một thẻ khác */
+#homee {
+  background-color: rgb(144, 200, 238);
+  margin: -8px -8px 0px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+.home {
+  background-color: aquamarine;
+  color: #000;
+  border-radius: 999px;
+  padding: 10px 20px;
+  margin: 20px;
+  display: inline-block;
+}
+.home:hover {
+  background-color: yellow;
+  color: black;
+}
+/* kídjgfoisdfjiahwrpfigpaurhpgouaehrgouehrg tài liệu đơn vị CSS */
+#tldv {
+  background-color: aquamarine;
+  color: black;
+  text-align: center;
+  border-radius: 900px;
+  padding: 10px 30px;
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+}
+#tldv:hover {
+  background-color: chocolate;
+  color: #000;
+}
+/* tách */
+/* pypographic font-weight and line-height */
+.fontwt {
+  background-color: #bebebe;
+  font-weight: bold;
+  line-height: 100px;
+}
+/* pypographic letter + word-spacing and text-align */
+.letter-align {
+  background-color: #cfa;
+  letter-spacing: 10px;
+  text-align: center;
+}
+.word_align {
+  background-color: #febbfe;
+  width: 100%;
+  text-align: right;
+}
+/* pypographic text_decoration + indent + transform */
+.text_over_up {
+  background-color: #deac;
+  text-decoration: overline;
+  text-transform: uppercase;
+  text-indent: 20px;
+}
+.text_under_lower {
+  background-color: #baefbb;
+  text-indent: 20px;
+  text-decoration: underline;
+  text-transform: lowercase;
+}
+.text_line_cap {
+  background-color: #aeec;
+  text-decoration: line-through;
+  text-transform: capitalize;
+  text-indent: 20px;
+}
+/* pypographic white-space and word-break */
+.space_break {
+  background-color: #afff;
+  white-space: pre-line;
+  word-break: break-all;
+}
+/* pypographic text-shadow and overflow */
+.shadow {
+  color: #e4ff4c;
+  font-weight: bold;
+  background-color: #947575;
+  text-shadow: 0px 0px 20px blue;
+}
+.overflow {
+  background-color: #015233;
+  white-space: pre-line;
+  text-indent: 10px;
+  width: 300px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+/* .overflow::-webkit-scrollbar {
+  width: 40px;
+}
+.overflow::-webkit-scrollbar-track {
+  background-color: #faccaa;
+}
+.overflow::-webkit-scrollbar-thumb {
+  background-color: rgb(200 105 255);
+  border-radius: 10px;
+}
+.overflow::-webkit-scrollbar-thumb:hover {
+  background-color: #caaffc;
+} */
+
+/* overflow : overflow-scrollbar and overscroll-behavior */
+.overscroll2 {
+  width: 400px;
+  height: 200px;
+  background-color: #554811;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+/* tách */
+/* Width of the scrollbar */
+.overscroll2::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track (background area) */
+.overscroll2::-webkit-scrollbar-track {
+  background: #66f852;
+}
+
+/* Thumb (draggable handle) */
+.overscroll2::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff7f50, #ff4500);
+  border-radius: 6px;
+}
+
+/* Thumb on hover */
+.overscroll2::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff6347, #ff0000);
+}
+/* text-overflow */
+.tover1 {
+  /* width: 300px;
+  height: 200px; */
+  background-color: #ddac;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+/* tách */
+/* Background-color */
+.background-color {
+  height: 40vh;
+  background-color: #aac;
+}
+/* background-image and repeat */
+.background-image {
+  width: 200px;
+  height: 280px;
+  background-image: url(./img/naruto_png.webp); /* url(./img/naruto_jbg.webp); */
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x;
+                        repeat-y
+                        repeat */
+  border: #000 dotted 2px;
+}
+.background-size {
+  width: 500px;
+  height: 300px;
+  background-image: url(./img/naruto_jbg.webp);
+  background-size: contain;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+}
+/* background-position */
+.background-position {
+  width: 200px;
+  height: 500px;
+  background-image: url(https://tse3.mm.bing.net/th/id/OIP.XYjKOo5ewm_qpJ_sUQ4LNwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+  background-position: center;
+  background-position: 100px 100px;
+  background-repeat: no-repeat;
+}
+/* background-gradient */
+.background-gradient {
+  color: #82be75;
+  font-size: 100px;
+  height: 200px;
+  background: #3f5efb;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.background-gradient:hover {
+  color: white;
+  background: #3f5efb;
+  background: linear-gradient(
+    5deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+/*  */
+.background-gradientbox {
+  height: 200px;
+  margin-top: 10px;
+  background: rgb(23, 100, 200);
+  background-image: radial-gradient(rgb(23, 100, 200) 0%, rgb(21, 23, 10) 100%);
+}
+#background-clip {
+  text-transform: capitalize;
+  display: inline;
+}
+/* tách */
+#background-attachment {
+  height: 300px;
+  background-image: url(https://wallpaperaccess.com/full/7872052.jpg);
+  background-attachment: fixed;
+}
+/* tách */
+.background-clip {
+  display: inline;
+  color: transparent;
+  background-color: rgb(210, 123, 123);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    rgb(100, 200, 300) 0%,
+    rgb(200, 123, 21) 100%
+  );
+  font-weight: bold;
+}
+/* backdrop-filter  */
+#thunghiembacdrop {
+  height: 30vh;
+  background-image: url(https://wallpapercave.com/wp/wp8982301.jpg);
+  background-size: cover;
+}
+.backdropfilter {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+/* Clip-path hỗ trợ web */
+.hotro_clip-path-web {
+  width: 310px;
+  height: 50px;
+  font-size: 38px;
+  border-radius: 300px;
+  text-align: center;
+  color: rgb(255 255 255);
+  text-decoration: none;
+  background: rgb(206, 121, 121);
+  display: inline-block;
+}
+.hotro_clip-path-web:hover {
+  background: rgba(185, 125, 125, 0.897);
+}
+/* tách */
+/* box-shadow */
+#boxshadow-web {
+  color: #000;
+  background: rgba(231, 123, 111, 0.658);
+  text-decoration: none;
+  font-size: 28px;
+  padding: auto;
+  text-align: center;
+  border-radius: 800px;
+}
+#boxshadow-web:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(175, 87, 77, 0.911);
+  text-decoration: underline;
+}
+/* box-shadow */
+.box_shadow {
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 210px;
+  margin-right: 210px;
+  margin-left: 210px;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  box-shadow:
+    200px 0px green,
+    0px 200px yellow,
+    200px 200px blue;
+}
+/* tách */
+/* pointer-events and img */
+#imgObito {
+  pointer-events: none;
+  margin: 0 auto;
+}
+/* tách */
+/* pseudo-element */
+#counter-css {
+  height: 40vh;
+  margin: 0 auto;
+  width: calc(100% - 100px);
+  background-color: rgb(18, 168, 168);
+  counter-reset: DAUXANHRAUMA;
+}
+#EXAMPLE::first-letter {
+  color: #000;
+}
+#EXAMPLE2 {
+  color: rgb(255, 245, 136);
+  counter-increment: HAHAHA;
+  counter-reset: EXAMPLE;
+}
+#Example3 {
+  counter-increment: EXAMPLE;
+}
+#Example3::before {
+  content: counter(EXAMPLE);
+}
+#EXAMPLE2::before {
+  content: counter(DAUXANHRAUMA);
+}
+#EXAMPLE {
+  color: rgb(101, 101, 194);
+  counter-increment: DAUXANHRAUMA;
+  counter-reset: HAHAHA;
+}
+#EXAMPLE::before {
+  content: "1." counter(DAUXANHRAUMA);
+}
+/*  */
+/* variables */
